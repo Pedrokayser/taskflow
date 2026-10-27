@@ -37,3 +37,7 @@ git push -u origin fix/recupera-tela-cupons
 ```
 
 A equipe abre um Pull Request, revisa e integra a recuperação. Assim, o trabalho pode voltar em minutos sem depender de procurar anexos antigos. Isso depende de a alteração da Carla ter sido commitada; arquivos nunca registrados no Git não podem ser recuperados pelo histórico.
+
+## Risco que Git sozinho não resolve
+
+Git controla versões do código, mas não torna o FTP um deploy seguro ou automático. A cópia manual ainda pode enviar uma versão errada, deixar arquivos antigos no servidor ou falhar no meio. Para reduzir esse risco, a EntregaJá precisará evoluir para um processo de deploy automatizado (CI/CD), com publicação de um commit identificado e verificação após a atualização.
